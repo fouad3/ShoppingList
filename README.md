@@ -21,10 +21,10 @@ Hybrid application featuring shopping list for users to search for items and add
 
 ## Required Libraries and Dependencies
 * Ionic CLI and Cordova:
-     * install them globally by using the command:
+     * install them globally by using the following command:
        ```
        npm install -g ionic cordova
-
+       ```
 ## How to Run Project
 
 1. clone or download this repository.
