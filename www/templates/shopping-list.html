@@ -1,0 +1,21 @@
+<ion-view view-title="ShoppingList">
+  <ion-content>
+    <div class="row">
+      <div class="col">
+          <a href="#/app/addItem" class="underline-color">
+            <button class="button button-block button-dark button-outline  ion-android-add-circle">Add Item</button>
+          </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ion-list>
+          <ion-item ng-repeat="product in products">
+            <span>{{product.name}}</span>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>

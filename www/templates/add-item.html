@@ -1,0 +1,37 @@
+<ion-view>
+  <ion-nav-buttons side="right">
+    <label class="item item-input item-input-wrapper">
+    <input type="text" placeholder="Search" ng-model="queryText.val">
+    </label>
+    <button class="button button-small" ng-click="search()">
+      Search
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="row" ng-if="display">
+      <div class="col col-offset-50">
+        <ion-spinner icon="spiral""></ion-spinner>
+      </div>
+    </div>
+    <div class="row" ng-if="queryText.val==='' && !display">
+      <div class="col col-offset-20" >
+        <button
+          ng-repeat="category in categories"
+          class="button block button-clear button-positive"
+          ng-click="attach(category.name)">
+          {{category.name}}
+        </button>
+      </div>
+    </div>
+    <div class="row" ng-if="queryText.val!=='' && products">
+      <div class="col">
+        <ion-list >
+          <ion-item ng-repeat="product in products" class="item-icon-right">
+            <span>{{product.name}}</span>
+            <button  class="button button-icon icon ion-android-add-circle" ng-click="addItem($index, product)"></button>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

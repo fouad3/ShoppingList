@@ -1,0 +1,15 @@
+/* Empty. Add your own CSS if you like */
+
+ion-content {
+  background-color: #D3D3D3;
+}
+ion-item.item {
+  background-color: #ffffff;
+}
+ion-side-menu.menu.menu-left {
+  background-color: #ffffff;
+}
+.underline-color {
+  color: #000000;
+}
+
